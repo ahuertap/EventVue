@@ -125,6 +125,24 @@
       "date": "2020-06-22T22:16:00.000Z",
       "time": "17:00",
       "attendees": []
+    },
+    {
+      "id": 4368623,
+      "user": {
+        "id": "abc123",
+        "name": "Angel Huerta"
+      },
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Angel Huerta"
+      },
+      "title": "Pagination links",
+      "description": "Adding pagination links to our event list",
+      "location": "Localhost",
+      "date": "2020-06-17T17:50:00.000Z",
+      "time": "13:00",
+      "attendees": []
     }
   ]
 }
