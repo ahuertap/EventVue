@@ -188,7 +188,7 @@
       },
       "category": "",
       "organizer": {
-        "id": "abc123",
+        "id": "abc13",
         "name": "Angel Huerta"
       },
       "title": "ouhiuiyhgh",
@@ -198,5 +198,23 @@
       "time": "",
       "attendees": []
     }
-  ]
+,
+    {
+      "id": 7418992,
+      "user": {
+        "id": "abc123",
+        "name": "Angel Huerta"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Angel Huerta"
+      },
+      "title": "hjghg",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    }  ]
 }
