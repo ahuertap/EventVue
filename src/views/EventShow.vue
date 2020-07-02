@@ -30,28 +30,24 @@
 
 <script>
 import { mapState } from 'vuex'
-import NProgress from 'nprogress'
-import store from '@/store/index'
+// import NProgress from 'nprogress'
+// import store from '@/store/index'
 
 export default {
   name: 'EventShow',
   props: {
-    id: {
-      type: Number
+    event: {
+      type: Object,
+      required: true
     }
-  },
-  beforeRouteEnter(to, from, next) {
-    NProgress.start()
-    store.dispatch('event/fetchEvent', to.params.id).then(() => {
-      NProgress.done()
-      next()
-    })
-  },
-  computed: {
-    ...mapState({
-      event: state => state.event.event
-    })
   }
+  // beforeRouteEnter(to, from, next) {
+  //   NProgress.start()
+  //   store.dispatch('event/fetchEvent', to.params.id).then(() => {
+  //     NProgress.done()
+  //     next()
+  //   })
+  // },
 }
 </script>
 
