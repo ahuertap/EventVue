@@ -6,6 +6,7 @@ import EventShow from '@/views/EventShow'
 import NProgress from 'nprogress'
 import store from '@/store/index'
 import NotFound from '@/views/NotFound'
+import NetworkIssue from '@/views/NetworkIssue'
 
 Vue.use(VueRouter)
 
@@ -28,8 +29,12 @@ const routes = [
           to.params.event = event
           next()
         })
-        .catch(() => {
-          next({ name: '404', params: { resource: 'event' } })
+        .catch(error => {
+          if (error.response && error.response.status === 404) {
+            next({ name: '404', params: { resource: 'event' } })
+          } else {
+            next({ name: 'network-issue' })
+          }
         })
     }
   },
@@ -43,6 +48,11 @@ const routes = [
     name: '404',
     component: NotFound,
     props: true
+  },
+  {
+    path: '/network-issue',
+    name: 'network-issue',
+    component: NetworkIssue
   },
   {
     // Toda ruta que no exista se redireccionara al componente 404
