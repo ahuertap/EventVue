@@ -7,6 +7,7 @@ import NProgress from 'nprogress'
 import store from '@/store/index'
 import NotFound from '@/views/NotFound'
 import NetworkIssue from '@/views/NetworkIssue'
+import ValidationForm from '@/views/ExampleValidationForm'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ const routes = [
     // Toda ruta que no exista se redireccionara al componente 404
     path: '*',
     redirect: { name: '404', params: { resource: 'page' } }
+  },
+  {
+    path: '/exampleValidationForm',
+    name: 'validation-form',
+    component: ValidationForm
   }
 ]
 

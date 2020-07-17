@@ -4,6 +4,9 @@
     <nav>
       <router-link :to="{ name: 'event-list' }">List</router-link> |
       <router-link :to="{ name: 'event-create' }">Create</router-link> |
+      <router-link :to="{ name: 'validation-form' }"
+        >ValidateExample
+      </router-link>
     </nav>
   </div>
 </template>
