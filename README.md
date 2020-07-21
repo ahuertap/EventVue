@@ -1,24 +1,13 @@
-# real-world-vue
+Proyecto con fines académicos
 
-## Project setup
-```
-npm install
-```
+App básica para guardar y mostrar eventos utilizando Vue.
+Las tecnologías usadas en este proyecto son las siguientes:
+•	Vue router
+•	Vuex
+•	JSON server
+•	Axios
+•	Vuelidate
+•	Vuejs-datepicker
+•	Nprogress
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Hacemos uso de mixins, filters, base components
